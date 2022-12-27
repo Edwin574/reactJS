@@ -4,7 +4,7 @@ import Products from "./Components/Products";
 function App() {
   return (
     <div className="row">
-      <div className="col-lg-8 mx-auto">
+      <div className="col-lg-8 mx-auto ">
         <Products></Products>
       </div>
     </div>
