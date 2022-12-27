@@ -1,7 +1,9 @@
+
+
 let productCount = 0;
-let ImageUrl = require("../images/milk-image.png");
-let isAvailable = "unavailable";
-let badgeClass = "badge";
+let ImageUrl = require("../images/Standards.png");
+let isAvailable = "available";
+let badgeClass = "badge-margin-left-100 badge";
 
 if (isAvailable == "Available") {
   badgeClass = badgeClass + " bg-success";
