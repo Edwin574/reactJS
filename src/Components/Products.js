@@ -1,12 +1,13 @@
 let productCount = 0;
 let ImageUrl = require("../images/milk-image.png");
-let isAvailable = "Available";
+let isAvailable = "unavailable";
 let badgeClass = "badge";
-badgeClass += isAvailable == "Available" ? "bg-success" : "bg-danger";
-// let style = {
-//   padding: "0px 20px",
-//   fontSize:12
-// }
+
+if (isAvailable == "Available") {
+  badgeClass = badgeClass + " bg-success";
+} else {
+  badgeClass = badgeClass + " bg-danger";
+}
 
 function displayFormattedProductCount() {
   return productCount > 0 ? productCount : "zero";
